@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="quiz">
+            <div id="questions">This is a quiz about Turkey, click start to begin
+                <div id="start">Start</div>
+            </div>
+            <div name="answersFrame" id="answersFrame" class="choices">
+                <input type="radio" name="answers" class="choices" value=0>
+                <p id="zero" class="pickone"></p>
+                <br/>
+                <input type="radio" name="answers" class="choices" value=1>
+                <p id="one" class="pickone"></p>
+                <br/>
+                <input type="radio" name="answers" class="choices" value=2>
+                <p id="two" class="pickone"></p>
+                <br/>
+                <input type="radio" name="answers" class="choices" value=3>
+                <p id="three" class="pickone"></p>
+            </div>
+            <div id="next">next</div>
+        </div>
+        <div id="table">
+            <div id="score"></div>
+            <table id="results">
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Your Answer</th>
+                        <th>Correct Answer</th>
+                </thead>
+                <tbody>
+                    <tr class="row" name=0>
+                        <td>Turkey's capital</td>
+                        <td>
+                            <p class="userAnswer" value=0></p>
+                        </td>
+                        <td>
+                            <p class="correctAnswer" value=0></p>
+                        </td>
+                    </tr>
+                    <tr class="row" name=1>
+                        <td>Turkey's founding date</td>
+                        <td>
+                            <p class="userAnswer" value=1></p>
+                        </td>
+                        <td>
+                            <p class="correctAnswer" value=1></p>
+                        </td>
+                    </tr>
+                    <tr class="row" name=2>
+                        <td>Turkey's population</td>
+                        <td>
+                            <p class="userAnswer" value=2></p>
+                        </td>
+                        <td>
+                            <p class="correctAnswer" value=2></p>
+                        </td>
+                    </tr>
+                    <tr class="row" name=3>
+                        <td>Istanbul's population</td>
+                        <td>
+                            <p class="userAnswer" value=3></p>
+                        </td>
+                        <td>
+                            <p class="correctAnswer" value=3></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="getResult">Result </button>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
